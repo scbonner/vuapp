@@ -14,13 +14,14 @@ class Register extends React.Component {
     middleName: "",
     lastName: "",
     mailId: "",
+    age: "",
+    genderIdentify: "",
+    race: "",
     phoneNum: "",
     department: "",
     jobTitle: "",
     reportingManager: "",
     branch: "",
-    employeeStatus: "",
-    maritalStatus: "",
     role: "",
     promote: ""
   };
@@ -73,6 +74,39 @@ class Register extends React.Component {
           <br />
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">Gender Identify: </label>
+          <input
+            type="text"
+            placeholder="Gender"
+            id="gender"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">Age: </label>
+          <input
+            type="text"
+            placeholder="Age"
+            id="age"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+         
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">Race/Ethnic: </label>
+          <input
+            type="text"
+            placeholder="Race"
+            id="race"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <br />
+          <br />
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <label className="addressId">Address: </label>
           <input
             type="address"
@@ -96,7 +130,17 @@ class Register extends React.Component {
             placeholder="State"
             id="stateId"
             onChange={this.handleChange}
-          />
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">Zip Code: </label>
+          <input
+            type="text"
+            placeholder="Zip Code"
+            id="zipCode"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
           <br />
           <br />
           <hr></hr>
