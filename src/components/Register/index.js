@@ -39,7 +39,7 @@ class Register extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label className="heading">
-            <h2>
+            <h2>Image
               <p><u> Personal Information:</u></p>
             </h2>
           </label>
@@ -67,6 +67,14 @@ class Register extends React.Component {
             type="text"
             placeholder="Last Name"
             id="lastName"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">DOB: </label>
+          <input
+            type="number"
+            placeholder="Date Of Birth"
+            id="dob"
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
@@ -134,7 +142,7 @@ class Register extends React.Component {
           &nbsp;&nbsp;&nbsp;&nbsp;
           <label className="lastName">Zip Code: </label>
           <input
-            type="text"
+            type="number"
             placeholder="Zip Code"
             id="zipCode"
             onChange={this.handleChange}
