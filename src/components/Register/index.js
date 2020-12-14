@@ -83,12 +83,13 @@ class Register extends React.Component {
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
           <label className="lastName">Gender Identify: </label>
-          <input
-            type="text"
-            placeholder="Gender"
-            id="gender"
-            onChange={this.handleChange}
-          />{" "}
+          <select id="department" onChange={this.handleChange}>
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="four">four</option>
+          </select>
+          {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
@@ -100,31 +101,47 @@ class Register extends React.Component {
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-         
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
           <label className="lastName">Race/Ethnic: </label>
-          <input
-            type="text"
-            placeholder="Race"
-            id="race"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
+          <select id="department" onChange={this.handleChange}>
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="four">four</option>
+          </select>
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="addressId">Marital Status: </label>
-          <select id="maritalStatus" onChange={this.handleChange}>
-            <option value="Single">Single</option>
-            <option value="Married">Married</option>
-            <option value="Separated">Separated</option>
-            <option value="Divorced">Divorced</option>
-          </select>
+          <br />
+          <br />
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">Marital Status: </label>
+            {/* <p>Marital Status:</p> */}
+            {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+            
+              <input type="radio" id="single" name="drone" value="huey"
+                    checked />
+              <label for="single">Single</label>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+                        
+              <input type="radio" id="dewey" name="drone" value="dewey" />
+              <label for="dewey">Married</label>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            
+              <input type="radio" id="louie" name="drone" value="louie" />
+              <label for="louie">Separated</label>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+
+              <input type="radio" id="louie" name="drone" value="louie" />
+              <label for="louie">Divorced</label>            
           <br />
           <br />
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp; 
-          <label className="phoneNum">Number of Kids: </label>
+          <label className="phoneNum">Number of Children: </label>
+          
           <select id="department" onChange={this.handleChange}>
             <option value="zero">zero</option>
             <option value="one">one</option>
@@ -141,123 +158,8 @@ class Register extends React.Component {
           <br />
           <hr></hr>
           <br />
-          {" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="addressId">Address: </label>
-          <input
-            type="address"
-            placeholder="Address"
-            id="addressId"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-           <label className="cityId">City: </label>
-          <input
-            type="city"
-            placeholder="City"
-            id="cityId"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-        
-           <label className="statelId">State: </label>
-          <input
-            type="state"
-            placeholder="State"
-            id="stateId"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="lastName">Zip Code: </label>
-          <input
-            type="number"
-            placeholder="Zip Code"
-            id="zipCode"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <br />
-          <br />
-          {" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="mailId">Email: </label>
-          <input
-            type="email"
-            placeholder="Enter Email"
-            id="mailId"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label classNumber="phoneNum">Phone Number: </label>
-          <input
-            type="text"
-            placeholder="Phone Number"
-            id="phoneNum"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="phoneNum">Mobile Number: </label>
-          <input
-            type="text"
-            placeholder="Mobile Number"
-            id="mobileNum"
-            onChange={this.handleChange}
-          />{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp; 
-          <label className="phoneNum">Number of Kids: </label>
-          <br />
-          <br />
-          {/* <label classNumber="jobTitle">Job Title: </label>
-          <input
-            type="text"
-            placeholder="Job Title"
-            id="jobTitle"
-            onChange={this.handleChange}
-          />
-          &nbsp;&nbsp;&nbsp;&nbsp; Reporting Manager:
-          <select id="reportingManager" onChange={this.handleChange}>
-            <option value="one">one</option>
-            <option value="two">two</option>
-            <option value="three">three</option>
-            <option value="four">four</option>
-          </select>
-          <br />
-          <br />
-          Branch:
-          <select id="branch" onChange={this.handleChange}>
-            <option value="one">one</option>
-            <option value="two">two</option>
-            <option value="three">three</option>
-            <option value="four">four</option>
-          </select>
-          <br />
-          <br />
-          Employee Status:
-          <select id="employeeStatus" onChange={this.handleChange}>
-            <option value="Active">Active</option>
-            <option value="Inactive">Inactive</option>
-          </select>
-          <br />
-          <br />
-          Marital Status:
-          <select id="maritalStatus" onChange={this.handleChange}>
-            <option value="Single">Single</option>
-            <option value="Married">Married</option>
-            <option value="Separated">Separated</option>
-            <option value="Divorced">Divorced</option>
-          </select>
-          <br />
-          <br />
-          Role:
-          <select id="role" onChange={this.handleChange}>
-            <option value="Manager">Manager</option>
-            <option value="User">User</option>
-          </select> */}
-          <br />
-          <br />
-          <label htmlFor="checkbox">Promote as Manager</label>
-          <input type="checkbox" id="promote" onChange={this.handleChange} />
         </form>
+  
       </div>
     );
   }

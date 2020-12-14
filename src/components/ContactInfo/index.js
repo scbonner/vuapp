@@ -1,8 +1,14 @@
 import React from 'react';
  
+// const Register = () => (
+//   <div>
+//     <h1>App</h1>
+//   </div>
+// );
+ 
+// export default Register;
 
-
-class SpouseInfo extends React.Component {
+class ContactInfo extends React.Component {
   state = {
     firstName: "",
     middleName: "",
@@ -33,42 +39,41 @@ class SpouseInfo extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label className="heading">
-            <h2>Image
-              <p><u> Spouse Information:</u></p>
-            </h2>
+              <h2><u> Contact Information:</u></h2>
           </label>
           <br />
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="firstName">First Name: </label>
+          <label className="addressId">Address: </label>
           <input
-            type="text"
-            placeholder="First Name"
-            id="firstName"
-            onChange={this.handleChange}
-          />
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="middleName">Middle Initial: </label>
-          <input
-            type="text"
-            placeholder="Middle Name"
-            id="middleName"
+            type="address"
+            placeholder="Address"
+            id="addressId"
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="lastName">Last Name: </label>
+           <label className="cityId">City: </label>
           <input
-            type="text"
-            placeholder="Last Name"
-            id="lastName"
+            type="city"
+            placeholder="City"
+            id="cityId"
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="lastName">DOB: </label>
+        
+           <label className="statelId">State: </label>
+          <input
+            type="state"
+            placeholder="State"
+            id="stateId"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">Zip Code: </label>
           <input
             type="number"
-            placeholder="Date Of Birth"
-            id="dob"
+            placeholder="Zip Code"
+            id="zipCode"
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
@@ -76,39 +81,35 @@ class SpouseInfo extends React.Component {
           <br />
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="lastName">Gender Identify: </label>
+          <label className="mailId">Email: </label>
           <input
-            type="text"
-            placeholder="Gender"
-            id="gender"
+            type="email"
+            placeholder="Enter Email"
+            id="mailId"
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-          {" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="lastName">Age: </label>
+          <label classNumber="phoneNum">Phone Number: </label>
           <input
             type="text"
-            placeholder="Age"
-            id="age"
+            placeholder="Phone Number"
+            id="phoneNum"
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-         
-          {" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label className="lastName">Race/Ethnic: </label>
+          <label className="phoneNum">Mobile Number: </label>
           <input
             type="text"
-            placeholder="Race"
-            id="race"
+            placeholder="Mobile Number"
+            id="mobileNum"
             onChange={this.handleChange}
           />
-        <br />
-        <br />
-        <hr></hr>
-      </form>
-    </div>
-    )};
-   }
-export default SpouseInfo;
+          <br />
+          <br />
+          <hr></hr>
+        </form>
+      </div>
+    );
+  }
+}
+export default ContactInfo;
