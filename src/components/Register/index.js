@@ -1,12 +1,6 @@
 import React from 'react';
  
-// const Register = () => (
-//   <div>
-//     <h1>App</h1>
-//   </div>
-// );
- 
-// export default Register;
+
 
 class Register extends React.Component {
   state = {
@@ -39,7 +33,7 @@ class Register extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label className="heading">
-            <h2>Image
+            <h2>
               <p><u> Personal Information:</u></p>
             </h2>
           </label>
