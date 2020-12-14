@@ -1,10 +1,13 @@
 import React from 'react';
-import Register from '../Register'
+import Register from '../Register';
+import SpouseInfo from '../SpouseInfo';
+// import ProfilePic from '../ProfilePic';
 
 const App = () => (
   <div> 
-    {/* <h1>App</h1> */}
+    {/* <ProfilePic /> */}
     <Register />
+    <SpouseInfo />
     </div>
 );
 

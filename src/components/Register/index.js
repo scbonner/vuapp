@@ -111,7 +111,35 @@ class Register extends React.Component {
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="addressId">Marital Status: </label>
+          <select id="maritalStatus" onChange={this.handleChange}>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Separated">Separated</option>
+            <option value="Divorced">Divorced</option>
+          </select>
           <br />
+          <br />
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp; 
+          <label className="phoneNum">Number of Kids: </label>
+          <select id="department" onChange={this.handleChange}>
+            <option value="zero">zero</option>
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="four">four</option>
+            <option value="five">five</option>
+            <option value="six">six</option>
+            <option value="seven">seven</option>
+            <option value="eight">eight</option>
+            <option value="more">more</option>
+          </select>
+          <br />
+          <br />
+          <hr></hr>
           <br />
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
@@ -148,11 +176,10 @@ class Register extends React.Component {
             onChange={this.handleChange}
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
-          
           <br />
           <br />
-          <hr></hr>
-          <br />
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <label className="mailId">Email: </label>
           <input
             type="email"
@@ -178,20 +205,9 @@ class Register extends React.Component {
           />{" "}
           &nbsp;&nbsp;&nbsp;&nbsp; 
           <label className="phoneNum">Number of Kids: </label>
-          <select id="department" onChange={this.handleChange}>
-            <option value="one">one</option>
-            <option value="two">two</option>
-            <option value="three">three</option>
-            <option value="four">four</option>
-            <option value="five">five</option>
-            <option value="six">six</option>
-            <option value="seven">seven</option>
-            <option value="eight">eight</option>
-            <option value="more">more</option>
-          </select>
           <br />
           <br />
-          <label classNumber="jobTitle">Job Title: </label>
+          {/* <label classNumber="jobTitle">Job Title: </label>
           <input
             type="text"
             placeholder="Job Title"
@@ -225,8 +241,10 @@ class Register extends React.Component {
           <br />
           Marital Status:
           <select id="maritalStatus" onChange={this.handleChange}>
+            <option value="Single">Single</option>
             <option value="Married">Married</option>
-            <option value="Unmarried">Unmarried</option>
+            <option value="Separated">Separated</option>
+            <option value="Divorced">Divorced</option>
           </select>
           <br />
           <br />
@@ -234,7 +252,7 @@ class Register extends React.Component {
           <select id="role" onChange={this.handleChange}>
             <option value="Manager">Manager</option>
             <option value="User">User</option>
-          </select>
+          </select> */}
           <br />
           <br />
           <label htmlFor="checkbox">Promote as Manager</label>
