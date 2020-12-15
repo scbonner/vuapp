@@ -32,21 +32,6 @@ export default () => {
               </div> 
             </div>
             <div className="fillContentDiv formElement">
-              {/* <div className="names formContentElement">
-                <input
-                  className="inputRequest "
-                  type="text"
-                  placeholder="First Name"
-                />
-                <input
-                  className="inputRequest "
-                  type="text"
-                  placeholder="Last Name"
-                />
-              </div>
-            </div> 
-             <div className="submitButtonDiv formElement">
-              <button className="submitButton">Register</button> */}
             </div>
           </form>
         </div>
