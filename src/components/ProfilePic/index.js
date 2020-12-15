@@ -15,19 +15,21 @@ export default () => {
     }
   };
   return (
+    
     <div className="register_wrapper">
       <div className="register_player_column_layout_one">
         <div className="register_player_Twocolumn_layout_two">
+        
           <form className="myForm">
             <div className="formInstructionsDiv formElement">
-              <h2 className="formTitle">Photo</h2>
+              <h2 className="formTitle">John Doe</h2>
               <p className="instructionsText" />
               <div className="register_profile_image">
                 <input id="profilePic" type="file" onChange={onChangePicture} />
               </div>
-              <div className="previewProfilePic">
+               <div className="previewProfilePic">
                 <img className="playerProfilePic_home_tile" src={imgData} />
-              </div>
+              </div> 
             </div>
             <div className="fillContentDiv formElement">
               {/* <div className="names formContentElement">
