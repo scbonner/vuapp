@@ -1,14 +1,10 @@
 import React from 'react';
  
-// const Register = () => (
-//   <div>
-//     <h1>App</h1>
-//   </div>
-// );
- 
-// export default Register;
 
-class ContactInfo extends React.Component {
+
+ 
+
+class EmergentContact extends React.Component {
   state = {
     firstName: "",
     middleName: "",
@@ -112,4 +108,5 @@ class ContactInfo extends React.Component {
     );
   }
 }
-export default ContactInfo;
+export default EmergentContact;
+

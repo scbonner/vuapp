@@ -3,8 +3,7 @@ import React, { useState } from "react";
 
 
 
-
-function ProfilePic() {
+function ProfilePic2() {
   const [picture, setPicture] = useState(null);
   const [imgData, setImgData] = useState(null);
   const onChangePicture = e => {
@@ -24,7 +23,7 @@ function ProfilePic() {
         <div className="register_player_Twocolumn_layout_two">
           <form className="myForm">
             <div className="formInstructionsDiv formElement">
-              <h2 className="formTitle">Jane Doe</h2>
+              <h2 className="formTitle">John Doe</h2>
               <p className="instructionsText" />
               <div className="register_profile_image">
                 <input id="profilePic" type="file" onChange={onChangePicture} />
@@ -42,13 +41,6 @@ function ProfilePic() {
   );
 };
 
-export default ProfilePic
+export default ProfilePic2;
 
 
-
-
-
-
-
-
-   
