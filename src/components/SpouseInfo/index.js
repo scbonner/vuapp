@@ -33,7 +33,7 @@ class SpouseInfo extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label className="heading">
-            <h2>Image
+            <h2>
               <p><u> Spouse Information:</u></p>
             </h2>
           </label>

@@ -1,15 +1,21 @@
 import React from 'react';
-import Register from '../Register';
-import SpouseInfo from '../SpouseInfo';
-import ContactInfo from '../ContactInfo';
+
 import ProfilePic from '../ProfilePic';
+import Profile from '../Profile';
+import Language from '../Language';
+import SpousePic from '../SpousePic';
+import SpouseInfo from '../SpouseInfo';
+import EmergentContact from '../EmergentContact';
+
 
 const App = () => (
   <div> 
     <ProfilePic />
-    <Register />
-    <ContactInfo />
+    <Profile />
+    <Language />
+    <SpousePic />
     <SpouseInfo />
+    <EmergentContact />
     </div>
 );
 
