@@ -85,8 +85,7 @@ class SpouseInfo extends React.Component {
             &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;
             <label className="genderIdentity">I Identify As: </label>
-            <label className="statelId">State: </label>
-            <select id="department" onChange={this.handleChange}>
+            <select id="gender" onChange={this.handleChange}>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Transgender Male">Transgender Male</option>
