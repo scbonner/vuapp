@@ -35,11 +35,40 @@ class EmergentContact extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label className="heading">
-              <h2><u> Contact Information:</u></h2>
+              <h2><u> Emergency Contact Person:</u></h2>
           </label>
           <br />
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;
+          <br />
+          {" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="firstName">First Name: </label>
+          <input
+            type="text"
+            placeholder="First Name"
+            id="firstName"
+            onChange={this.handleChange}
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="middleName">Middle Name: </label>
+          <input
+            type="text"
+            placeholder="Middle Name"
+            id="middleName"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label className="lastName">Last Name: </label>
+          <input
+            type="text"
+            placeholder="Last Name"
+            id="lastName"
+            onChange={this.handleChange}
+          />{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
           <label className="addressId">Address: </label>
           <input
             type="address"
