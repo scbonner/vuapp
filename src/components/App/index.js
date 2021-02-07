@@ -5,6 +5,8 @@ import ProfilePic from '../ProfilePic';
 import ProfilePic2 from '../ProfilePic2'
 import EmergentContact from '../EmergentContact'
 import Language from '../Language';
+import Landing from '../Landing'
+
 
 
 const App = () => (
@@ -15,6 +17,8 @@ const App = () => (
     <ProfilePic2 />
     <SpouseInfo />
     <EmergentContact />
+    <Landing />
+  
     
     {/* <Profile />
     <Language />
