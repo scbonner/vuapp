@@ -93,7 +93,7 @@ const Landing = ({ data }) => {
 
                <div className="widget widget_tweets">
 
-		         </div>
+		         </div> 
             </aside>
       </div>
    </section>
